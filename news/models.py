@@ -14,10 +14,11 @@ class Topic (models.Model):
 class Content(models.Model):
     title = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255, unique=True)
-    content = models.TextField()
+    body = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     cover_image = models.ImageField(null=True, blank=True)
-    tags = models.ManyToManyField(Topic, blank=True)
+    likes = models.ManyToManyField(settings.AUTH_USER_MODEL, blank=True, related_name='likes')
+    topics = models.ManyToManyField(Topic, blank=True)
 
     def __str__(self):
         return self.title
@@ -28,6 +29,7 @@ class Comment(models.Model):
     parent = models.ForeignKey("self", on_delete=models.CASCADE, null=True, blank=True)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     body = models.TextField()
+    likes = models.ManyToManyField(settings.AUTH_USER_MODEL, blank=True, related_name='comments')
     created_at = models.DateTimeField(auto_now_add=True)
     is_active = models.BooleanField(default=True)
 
