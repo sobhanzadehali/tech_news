@@ -6,11 +6,8 @@ from django_filters import rest_framework as filters
 
 
 class ContentFilter(django_filters.FilterSet):
-    topics = django_filters.ModelMultipleChoiceFilter(
-        field_name='topics__name',
-        to_field_name='name',
-        queryset=Topic.objects.all()
-    )
+
+    topics = django_filters.CharFilter(method='filter_topics', label='filter by topics')
 
     include_words = django_filters.CharFilter(
         method='filter_include_words',
@@ -25,6 +22,11 @@ class ContentFilter(django_filters.FilterSet):
     class Meta:
         model = Content
         fields = ['topics']
+
+    def filter_topics(self, queryset, name, value):
+        words = value.split(',')
+        queryset = queryset.filter(topics__name__in=words)
+        return queryset
 
     def filter_include_words(self, queryset, name, value):
         words = value.split(',')

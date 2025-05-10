@@ -10,12 +10,13 @@ class TopicSerializer(serializers.ModelSerializer):
 
 class ContentSerializer(serializers.ModelSerializer):
     comments = serializers.SerializerMethodField()
+    topics = TopicSerializer(many=True, read_only=True)
     class Meta:
         model = Content
-        fields = ['title', 'slug', 'body', 'created_at', 'cover_image', 'author', 'comments']
+        fields = ['title', 'slug', 'body','created_at','topics', 'cover_image', 'author', 'comments']
 
     def get_comments(self, obj):
-        comments = obj.comments.filter(parent__isnull=True).order_by('-created_at')
+        comments = obj.comments.all().order_by('-created_at')
         return CommentSerializer(comments, many=True).data
 
 

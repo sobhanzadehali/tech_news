@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c960111f-c9f2-4fe5-9bd0-f6055368ee01" name="Changes" comment="" />
+    <list default="true" id="c960111f-c9f2-4fe5-9bd0-f6055368ee01" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/serializers.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,21 +32,21 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "sobhanzadehali"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sobhanzadehali&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/sobhanzadehali/tech_news.git",
-    "accountId": "6d6d42d8-7c7e-4616-8713-329b2eeeceb5"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sobhanzadehali/tech_news.git&quot;,
+    &quot;accountId&quot;: &quot;6d6d42d8-7c7e-4616-8713-329b2eeeceb5&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2wqcA7n5YsENnktGSkLIQ6H1js9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -55,6 +59,7 @@
     "Django tests.Test: news.tests.BaseTestCase.executor": "Run",
     "Django tests.Test: news.tests.ModelTests.executor": "Run",
     "Django tests.Test: news.tests.ModelTests.test_content_creation.executor": "Run",
+    "Django tests.Test: news.tests.ModelsTestCase.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -68,7 +73,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Django tests.Test: news.tests.ModelTests.test_content_creation">
+  <component name="RunManager" selected="Django tests.Test: news.tests.ModelsTestCase">
     <configuration name="Test: news.tests.BaseTestCase" type="DjangoTestsConfigurationType" temporary="true">
       <module name="techNews" />
       <option name="ENV_FILES" value="" />
@@ -132,6 +137,27 @@
       <option name="OPTIONS" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Test: news.tests.ModelsTestCase" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="techNews" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="news.tests.ModelsTestCase" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="techNews" type="Python.DjangoServer" factoryName="Django server">
       <module name="techNews" />
       <option name="ENV_FILES" value="" />
@@ -159,6 +185,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Django tests.Test: news.tests.ModelsTestCase" />
         <item itemvalue="Django tests.Test: news.tests.ModelTests.test_content_creation" />
         <item itemvalue="Django tests.Test: news.tests.ModelTests" />
         <item itemvalue="Django tests.Test: news.tests.BaseTestCase" />
@@ -182,6 +209,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746772398819</updated>
       <workItem from="1746772399998" duration="10302000" />
+      <workItem from="1746879846015" duration="1647000" />
     </task>
     <servers />
   </component>
@@ -203,5 +231,6 @@
     <SUITE FILE_PATH="coverage/techNews$Test__news_tests_BaseTestCase.coverage" NAME="Test: news.tests.BaseTestCase Coverage Results" MODIFIED="1746782444452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/techNews$Test__news_tests_ModelTests.coverage" NAME="Test: news.tests.ModelTests Coverage Results" MODIFIED="1746782525885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/techNews$Test__news_tests_ModelTests_test_content_creation.coverage" NAME="Test: news.tests.ModelTests.test_content_creation Coverage Results" MODIFIED="1746782530815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/techNews$Test__news_tests_ModelsTestCase.coverage" NAME="Test: news.tests.ModelsTestCase Coverage Results" MODIFIED="1746879978333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
