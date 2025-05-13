@@ -38,11 +38,13 @@ INSTALLED_APPS = [
     'news.apps.NewsConfig',
     'rest_framework',
     'django_filters',
+    'corsheaders',
     'drf_spectacular',
 
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -132,5 +134,7 @@ SPECTACULAR_SETTINGS = {
     'DESCRIPTION': 'roshan internship project apis',
     'VERSION': '1.0.0',
     'SERVE_INCLUDE_SCHEMA': False,
-    # OTHER SETTINGS
+
 }
+
+CORS_ALLOW_ALL_ORIGINS = True  # for development only
