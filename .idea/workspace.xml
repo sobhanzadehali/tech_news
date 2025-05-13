@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c960111f-c9f2-4fe5-9bd0-f6055368ee01" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/filters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techNews/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/techNews/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techNews/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/techNews/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,26 +56,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Django Server.techNews.executor": "Debug",
-    "Django tests.Test: news.tests.BaseTestCase.executor": "Run",
-    "Django tests.Test: news.tests.ModelTests.executor": "Run",
-    "Django tests.Test: news.tests.ModelTests.test_content_creation.executor": "Run",
-    "Django tests.Test: news.tests.ModelsTestCase.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "git-widget-placeholder": "challengeOne",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Django Server.techNews.executor&quot;: &quot;Debug&quot;,
+    &quot;Django tests.Test: news.tests.BaseTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: news.tests.ModelTests.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: news.tests.ModelTests.test_content_creation.executor&quot;: &quot;Run&quot;,
+    &quot;Django tests.Test: news.tests.ModelsTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Django tests.Test: news.tests.ModelsTestCase">
     <configuration name="Test: news.tests.BaseTestCase" type="DjangoTestsConfigurationType" temporary="true">
       <module name="techNews" />
@@ -210,6 +213,8 @@
       <updated>1746772398819</updated>
       <workItem from="1746772399998" duration="10302000" />
       <workItem from="1746879846015" duration="1647000" />
+      <workItem from="1746946827650" duration="26000" />
+      <workItem from="1747116324906" duration="656000" />
     </task>
     <servers />
   </component>
