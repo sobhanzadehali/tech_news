@@ -5,3 +5,9 @@ sqlparse==0.5.3
 django-filter==25.1
 drf-spectacular~=0.28.0
 selenium==4.32.0
+celery==5.5.2
+django-celery-beat==2.8.1
+redis>=5.0
+gunicorn
+django-cors-headers==4.7.0
+pillow
