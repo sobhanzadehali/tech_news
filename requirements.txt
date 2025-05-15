@@ -11,3 +11,4 @@ redis>=5.0
 gunicorn
 django-cors-headers==4.7.0
 pillow
+flower

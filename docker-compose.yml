@@ -39,3 +39,11 @@ services:
       - redis
     environment:
       - CELERY_BROKER_URL=redis://redis:6379/0
+  
+  flower:
+    build: .
+    command: celery -A techNews flower --port=5555 --broker=redis://redis:6379/0
+    ports:
+      - "5555:5555"
+    depends_on:
+      - redis
