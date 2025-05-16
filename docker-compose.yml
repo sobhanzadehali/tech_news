@@ -20,7 +20,7 @@ services:
 
   celery:
     build: .
-    command: celery -A techNews worker --loglevel=info
+    command: celery -A techNews worker -E --loglevel=info
     volumes:
       - .:/app
     depends_on:
