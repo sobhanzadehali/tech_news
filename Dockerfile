@@ -1,7 +1,17 @@
 FROM python:3.11-slim
 
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
+# Install Chrome and Chromedriver
+RUN apt-get update && apt-get install -y \
+    wget gnupg unzip curl \
+    chromium chromium-driver
+
+# Environment variables
+ENV PATH="/usr/lib/chromium/:${PATH}"
+ENV CHROME_BIN="/usr/bin/chromium"
+
 
 WORKDIR /app
 
