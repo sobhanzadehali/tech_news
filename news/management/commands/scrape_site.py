@@ -61,7 +61,7 @@ class Command(BaseCommand):
                                                                    )
                 for comment in post['comments']:
                     Comment.objects.update_or_create(content=cn, body=comment)
-                self.stdout.write(self.style.SUCCESS('Successfully updated content'))
+            self.stdout.write(self.style.SUCCESS('Successfully updated content'))
 
         finally:
             driver.quit()
