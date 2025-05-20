@@ -16,7 +16,7 @@ docker compose exec django sh -c "python manage.py createsuperuser"
 docker compose exec django sh -c "python manage.py collectstatic"
 ```
 
-## how to overview project
+## how to view project
 project apis have been documented using swagger.
 
 go to http://localhost:8000/docs/swagger to see the documentation.
