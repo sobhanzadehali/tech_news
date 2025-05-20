@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from django.utils.text import slugify
-from django.utils.dateparse import parse_datetime  # Optional
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 import time
 import datetime
 
@@ -19,7 +19,10 @@ class Command(BaseCommand):
         chrome_options.add_argument('--disable-dev-shm-usage')
         chrome_options.add_argument('--window-size=1920x1080')
 
-        driver = webdriver.Chrome(options=chrome_options)
+        driver = webdriver.Remote(
+            command_executor='http://selenium:4444/wd/hub',
+            options=chrome_options
+        )
 
         try:
             driver.get('https://www.zoomit.ir/')
