@@ -40,3 +40,22 @@ class Comment(models.Model):
     def __str__(self):
         return self.body
 
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    balance = models.BigIntegerField(default=0)
+
+    def __str__(self):
+        return self.user.username
+
+
+class Billboard(models.Model):
+    title = models.CharField(max_length=255)
+    slug = models.SlugField(max_length=255)
+    html = models.TextField()
+    width = models.PositiveIntegerField(default=0)
+    height = models.PositiveIntegerField(default=0)
+    expiration_date = models.DateField()
+    owner = models.ForeignKey(Profile, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.title
